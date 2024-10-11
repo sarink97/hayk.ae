@@ -11,6 +11,19 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        cerise: "#E12454",
+        prussianBlue : "#414042",
+        grey: "#CBCBCF",
+        white : "#FFFFFF"
+      },
+      keyframes: {
+        'border-spin': {
+          '0%': { borderColor: 'black' },
+          '100%': { borderColor: '#E12454' },
+        },
+      },
+      animation: {
+        'border-spin-once': 'border-spin 0.3s linear forwards',
       },
     },
   },

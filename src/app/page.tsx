@@ -1,9 +1,12 @@
-import Image from "next/image";
+
+import CenterLayout from "./components/atoms/centerLayout";
+import CustomCard from "./components/molecules/CustomCard";
+
 
 export default function Home() {
   return (
-   <div>
-    Hello Hayk
-   </div>
+    <CenterLayout>
+      <CustomCard/>
+    </CenterLayout >
   );
 }
