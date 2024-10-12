@@ -5,6 +5,7 @@ import CustomSeparator from "./components/atoms/CustomSeparator";
 import CustomCard from "./components/molecules/CustomCard";
 import Section from "./components/organisms/Section";
 import { TicketIcon } from "lucide-react";
+import CustomImage from "./components/atoms/CustomImage";
 
 
 export default function Home() {
@@ -16,6 +17,6 @@ export default function Home() {
     { title: 'Title4', icon: <TicketIcon />, description: 'Description1' },
 ];
   return (
-      <Section cardArray={cardArray} title={'Services'} />
+      <Section cardArray={cardArray} title={""} logo={false}/>
   );
 }

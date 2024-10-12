@@ -2,10 +2,12 @@ import React ,{ReactElement} from 'react'
 import CustomCircle from "../atoms/CustomCircle";
 import { TicketsPlane } from 'lucide-react';
 import CustomBox from '../atoms/CustomBox';
+import CustomImage from '../atoms/CustomImage';
 interface cardProps{
     title : string,
     description : string,
-    icon  : ReactElement
+    icon  : ReactElement,
+    logo : boolean
 }
 const CustomCard = (props  :cardProps) => {
     return (
@@ -13,7 +15,7 @@ const CustomCard = (props  :cardProps) => {
                 transition-transform duration-300 hover:z-[1000] 
                 hover:translate-y-[-30px] hover:cursor-pointer 
                 hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)]'>
-            <CustomCircle iconName={props.icon} />
+            {props.logo ? <CustomImage/> : <CustomCircle iconName={props.icon} />}
             <CustomBox title={props.title} description={props.description} />
         </div>
 
