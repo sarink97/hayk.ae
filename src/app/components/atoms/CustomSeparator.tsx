@@ -1,14 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const CustomSeparator = () => {
   return (
-    <div className='relative flex items-center h-full'>
-      <div className='relative h-[200px] w-[2px] 
-                      rounded-[10px] bg-cerise mx-auto
-                      bottom-[-30%] translate-y-[15%]'></div>
-      <div className='absolute bottom-[30%] left-1/2 transform -translate-x-1/2 h-[30px] w-[30px] rounded-full bg-cerise'></div>
+    <div className='relative flex flex-col justify-center items-center h-full'>
+      <div className='relative h-[200px] w-[2px] rounded-[10px] bg-cerise'></div>
+      <div className='absolute h-[30px] w-[30px] rounded-full bg-cerise -translate-y-1/2 top-1/2'></div>
     </div>
-  )
-}
 
-export default CustomSeparator
+  );
+};
+
+export default CustomSeparator;
