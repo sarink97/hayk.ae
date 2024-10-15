@@ -25,18 +25,18 @@ const HomeNav = () => {
           position: "fixed",
           zIndex: 99999,
         }}
-        className={`  h-20  flex justify-center z-999  absolute  w-[100%] border-white border-b-2  ${
+        className={`h-20 flex justify-center z-999 absolute w-[100%] ${
           navbarBg
-            ? "bg-slate-600 bg-none border-[#E12454]"
-            : "bg-slate-400 bg-opacity-30 "
-        }`}
+            ? "bg-[#414042] bg-none border-[#E12454]"
+            : "bg-slate-400 bg-opacity-30 border-white"
+        } border-b-2 transition-all duration-300`}
       >
-        <div className="flex justify-between items-center w-[1280px] ">
+        <div className="flex justify-between items-center w-[88%]">
           <a
             href="/"
             className="cursor-pointer flex items-center justify-center"
           >
-            <img src="/hayk_logo_dark.svg" alt="logo" className="w-[140px]" />
+            <img src="/hayk-logo.png" alt="logo" className="w-[140px]" />
           </a>
 
           <div>
@@ -45,7 +45,7 @@ const HomeNav = () => {
                 Home
               </li>
               <li className="cursor-pointer hover:text-[#E12454]  text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454]  h-8">
-                Brunches
+                Branches
               </li>
               <li className="cursor-pointer hover:text-[#E12454]  text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454]  h-8">
                 Solutions
