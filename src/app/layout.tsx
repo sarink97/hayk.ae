@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import HomeNav from "@/components/atoms/HomeNav";
 
 export const metadata: Metadata = {
   title: "Hayk",
@@ -15,7 +15,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <HomeNav />
+        <div>{children}</div>
       </body>
     </html>
   );
