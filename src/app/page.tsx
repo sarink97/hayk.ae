@@ -9,10 +9,7 @@ import AboutUsSection from "./components/atoms/About";
 export default function Home() {
   return (
       <>
-        <Services />
-        <ApricodeSection />
-        <Branches />
-        <AboutUsSection />
+        
       </>
   );
 }
