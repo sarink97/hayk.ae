@@ -1,14 +1,18 @@
 
 
 import ApricodeSection from "./components/sections/ApricodeSection";
-import Branches from "./components/sections/branches";
+import Branches from "./components/sections/About";
+import Services from "./components/sections/Services";
+import AboutUsSection from "./components/atoms/About";
 
 
 export default function Home() {
   return (
       <>
-        <Branches />
+        <Services />
         <ApricodeSection />
+        <Branches />
+        <AboutUsSection />
       </>
   );
 }
