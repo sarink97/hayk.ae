@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import FooterCol from "../atoms/FooterCol";
 
@@ -12,13 +13,13 @@ const FooterLinks = () => {
         <FooterCol
           title="Our Services"
           links={[
-            { title: "Home", href: "/" },
-            { title: "About us", href: "/about_us" },
-            { title: "Services", href: "/services" },
-            { title: "Features", href: "/features" },
+            { title: "Home", href: "#home" },
+            { title: "About us", href: "#about-us" },
+            { title: "Services", href: "#services" },
+            { title: "Features", href: "#Features" },
           ]}
         />
-        <FooterCol
+        {/* <FooterCol
           title="Quick Link"
           links={[
             { title: "Knowledge Base", href: "" },
@@ -44,7 +45,7 @@ const FooterLinks = () => {
             { title: "FAQ", href: "/about_us" },
             { title: "Contect", href: "/about_us" },
           ]}
-        />
+        /> */}
       </div>
     </div>
   );
