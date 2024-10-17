@@ -1,9 +1,33 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 import FooterLinks from "../molecules/FooterLinks";
 import FooterUpPart from "../molecules/FooterUpPart";
 import Input from "../atoms/Input";
+import emailjs from 'emailjs-com';
 
 const Footer = () => {
+  const [nameValue , setNameValue] = useState('');
+  const [emailValue , setEmailValue] = useState('');
+  const [messageValue , setMessageValue] = useState('');
+  function sendEmail(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+    e.preventDefault();
+    
+    // Prepare data to send
+    const templateParams = {
+      from_name: nameValue,
+      from_email: emailValue,
+      message: messageValue,
+    };
+  
+    emailjs.send('your_serviceID', 'your_templateID', templateParams, 'your_publicKey')
+      .then((response) => {
+        console.log('Email successfully sent!', response.status, response.text);
+      })
+      .catch((error) => {
+        console.error('Failed to send the email.', error);
+      });
+  }
   return (
     <>
       <div
@@ -51,14 +75,19 @@ const Footer = () => {
                 type="text"
                 placeHolder=" Enter your Name"
                 label=" *Name"
-                height="35px"
+                height="35px" 
+                value={nameValue} 
+                onChange={(e) => setNameValue(e.target.value)}                
               />
               <Input
                 type="text"
                 placeHolder=" Enter your Email"
-                label=" *Email Adress"
-                height="35px"
-              />
+                label=" *Email Address"
+                height="35px" 
+                value={emailValue} 
+                onChange={(e) => {
+                  setEmailValue(e.target.value);
+                }}         />
               <div>
                 <label> *Write the Massage</label>
                 <textarea
@@ -73,11 +102,14 @@ const Footer = () => {
                     lineHeight: "1.2", // Ensure appropriate line height
                     marginRight: "200px",
                   }}
+                  value={messageValue}
+                  onChange={(e) => setMessageValue(e.target.value)}
                   placeholder="Write your Message ..."
                 ></textarea>
               </div>
-              <button className="px-5 py-1 bg-red-600 rounded-xl hover:bg-[#E12454]">
-                Send
+              <button className="px-5 py-1 rounded-xl bg-red-600 hover:bg-[#E12454]"
+                    onClick={(e) => sendEmail(e)}>
+                    Send
               </button>
             </div>
           </div>

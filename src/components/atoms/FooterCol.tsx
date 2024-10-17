@@ -11,9 +11,9 @@ const FooterCol = (props: Props) => {
       <div className="flex flex-col ">
         <h1 className="font-bold text-xl mb-3">{props.title}</h1>
         {props.links.map((link, id) => (
-          <div>
+          <div key={id}>
             <ul>
-              <li key={id}>
+              <li>
                 <Link
                   className="hover:text-[#E12454] duration-300 text-gray-400"
                   href={link.href}
