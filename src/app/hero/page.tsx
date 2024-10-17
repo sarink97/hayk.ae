@@ -25,8 +25,12 @@ const Hero = () => {
           </h1>
           <button
             onClick={() => {
+              const scrollPercentage = 0.175; // 50% scroll
+              const scrollTarget =
+                document.body.scrollHeight * scrollPercentage;
+
               window.scrollTo({
-                top: window.innerHeight,
+                top: scrollTarget,
                 behavior: "smooth",
               });
             }}
