@@ -21,17 +21,17 @@ const AboutUsSection = () => {
             through innovative solutions.
           </h1>
           <p className="text-2xl text-gray-600 mb-6">
-            Hayk is dedicated to helping businesses thrive through a range of
-            services, from company formation to digital solutions. With a focus
-            on innovation, integrity, and client success, Hayk offers
-            personalized services tailored to meet the unique needs of each
-            business.
+            At Hayk, we are your gateway to success in three distinct areas: business setup in the UAE, 
+            unforgettable travel experiences across Dubai, Armenia, and Georgia, 
+            and cutting-edge digital solutions. We are committed to delivering personalized services that cater to the unique needs of entrepreneurs,
+            travelers, and businesses.
           </p>
           <p className="text-2xl text-gray-600 mb-6">
-            Founded to support entrepreneurs and businesses, Hayk has grown
-            steadily, reaching significant milestones over the years. The
-            company continues to expand its services, driving growth and success
-            for clients across various industries.
+            Whether you're looking to establish a company in the UAE, 
+            explore the beauty of Dubai, Armenia, and Georgia through tailored travel experiences, 
+            or implement innovative digital solutions, 
+            Hayk offers expert guidance and support every step of the way. 
+            Our dedication to client success, integrity, and innovation drives us to continuously expand and refine our services to meet your evolving needs.
           </p>
         </div>
 
