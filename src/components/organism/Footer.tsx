@@ -4,7 +4,11 @@ import React, { useState } from "react";
 import FooterLinks from "../molecules/FooterLinks";
 import FooterUpPart from "../molecules/FooterUpPart";
 import Input from "../atoms/Input";
+
 import emailjs from 'emailjs-com';
+
+import Link from "next/link";
+
 
 const Footer = () => {
   const [nameValue , setNameValue] = useState('');
@@ -39,38 +43,31 @@ const Footer = () => {
           height: "400px",
           marginBottom: "-80px",
         }}
+        id="contact-us"
       >
-        <div className="w-full h-full bg-amber-800 bg-opacity-30 text-white flex justify-end items-center ">
-          <div className="w-full flex justify-between ml-[600px] gap-28 bg-gray-500 bg-opacity-35 pl-10 py-11 rounded-l-xl border-2 border-r-0 border-gray-600 shadow-2xl">
-            <ul className="flex flex-col gap-1 w-[450px] justify-center m-auto">
+        <div className="ml-auto  w-full h-full bg-amber-800 bg-opacity-30 text-white flex justify-end items-center ">
+          <div className="w-[55%] flex  justify-center  gap-7 bg-gray-500 bg-opacity-35 pr-[6%] pl-[1%] py-4 rounded-l-xl border-2 border-r-0 border-gray-600 shadow-2xl">
+            <ul className="flex flex-col gap-2 w-[50%] justify-between m-auto ">
               <li>
-                <span className="text-xl">Phone: </span>
-                <a className="cursor-pointer hover:text-gray-700 duration-300 text-xl text-black font-bold">
-                  +1 945-562-345
-                </a>
-              </li>
-              <li>
-                <span className="text-xl">Fax: </span>
-                <a className="cursor-pointer hover:text-gray-700 duration-300 text-xl text-black font-bold">
-                  +1 945-562-345
+                <span className="text-xl block mb-2">Phone Number : </span>
+                <a className="  duration-300 text-xl bg-[#E12454] bg-opacity-45 rounded-lg p-2 block w-fit">
+                  +971 (4) 597-3335
                 </a>
               </li>
 
               <li>
-                <span className="text-xl">Email: </span>
-                <a className="cursor-pointer hover:text-gray-700 duration-300 text-xl text-black font-bold">
-                  info@example.com
-                </a>
-              </li>
-
-              <li>
-                <span className="text-xl">Website: </span>
-                <a className="cursor-pointer hover:text-gray-700 duration-300 text-xl text-black font-bold">
-                  www.example.com
-                </a>
+                <span className="text-xl block mb-4 cursor-pointer ">
+                  Email:{" "}
+                </span>
+                <Link
+                  href="mailto:success@hayk.ae?subject=Subject%20Here&body=Body%20Content%20Here "
+                  className=" bg-[#E12454] hover:bg-red-500 rounded-lg p-2 duration-300 text-xl "
+                >
+                  Send Email
+                </Link>
               </li>
             </ul>
-            <div className="flex flex-col gap-2 w-full items-center">
+            <div className="flex flex-col gap-2 w-[60%] items-start">
               <Input
                 type="text"
                 placeHolder=" Enter your Name"
@@ -92,15 +89,13 @@ const Footer = () => {
                 <label> *Write the Massage</label>
                 <textarea
                   style={{
-                    width: "60%",
-                    border: "solid 2px black",
+                    width: "100%",
                     borderRadius: "10px",
                     height: "80px",
                     color: "black",
-                    paddingTop: "0px", // Start text from top
-                    paddingLeft: "2px",
+                    padding: "10px",
                     lineHeight: "1.2", // Ensure appropriate line height
-                    marginRight: "200px",
+                    outline: "0px",
                   }}
                   value={messageValue}
                   onChange={(e) => setMessageValue(e.target.value)}

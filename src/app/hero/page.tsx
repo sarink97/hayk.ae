@@ -14,6 +14,7 @@ const Hero = () => {
           width: "100%",
           height: "100vh",
         }}
+        id="home"
       >
         <div className="bg-slate-800 w-full h-full bg-opacity-45 flex flex-col justify-between items-center ">
           <h1 className="text-white text-[30px] w-[900px]  flex  text-left pl-3 h-[240px] absolute top-[20%] left-[6%] bg-[#414042] border-l-8 border-[#E12454] bg-opacity-70 rounded-xl shadow-lg">
