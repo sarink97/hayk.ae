@@ -23,7 +23,7 @@ const HorizontalScroller = ({
     <div
       ref={scrollRef}
       className={
-        `flex ${!isScrolling && 'justify-center'} space-x-4 gap-[30px] overflow-x-auto py-4 px-[calc((100%-1440px)/2)] scrollbar-none
+        `flex ${!isScrolling && 'justify-center'} space-x-4 gap-[30px] overflow-x-auto py-4 px-[6%] scrollbar-none
         !items-center ` +
         scrollerStyle
       }

@@ -13,7 +13,7 @@ const Section = (props : sectionProps) => {
     const cardArray = props.cardArray;
     return (
         <div className='border-t-[2px] border-b-[2px] border-prussianBlue
-                        p-[10px]'>
+                        py-[10px]'>
             <h1 className='text-cerise text-[40px] text-center font-bold p-[20px] pb-[0px]'>{props.title}</h1>
             <div className="relative  max-w-full h-auto overflow-x-auto 
                             scrollbar-thin scrollbar-thumb-cerise scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full m-auto
