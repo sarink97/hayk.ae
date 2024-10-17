@@ -17,16 +17,20 @@ const Hero = () => {
         id="home"
       >
         <div className="bg-slate-800 w-full h-full bg-opacity-45 flex flex-col justify-between items-center ">
-          <h1 className="text-white text-[30px] w-[900px]  flex  text-left pl-3 h-[240px] absolute top-[20%] left-[6%] bg-[#414042] border-l-8 border-[#E12454] bg-opacity-70 rounded-xl shadow-lg">
-            we provide expert services in UAE business setup, tourism
+          <h1 className="text-white text-[30px] w-[900px]  flex items-center  text-left pl-3 h-[240px] absolute top-[20%] left-[6%] bg-[#414042] border-l-8 border-[#E12454] bg-opacity-70 rounded-xl shadow-lg">
+            We provide expert services in UAE business setup, tourism
             management, and web development to help businesses thrive. Our
             tailored solutions ensure growth and innovation for companies across
             various industries.
           </h1>
           <button
             onClick={() => {
+              const scrollPercentage = 0.175; // 50% scroll
+              const scrollTarget =
+                document.body.scrollHeight * scrollPercentage;
+
               window.scrollTo({
-                top: window.innerHeight,
+                top: scrollTarget,
                 behavior: "smooth",
               });
             }}
@@ -37,7 +41,7 @@ const Hero = () => {
               color="#E12459"
             />
           </button>
-          <p className="absolute top-[68%]  text-xl">Explore Now . . . </p>
+          <p className="absolute top-[68%]  text-xl">Explore Now</p>
         </div>
       </div>
     </>
