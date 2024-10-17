@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import scrollbarPlugin from 'tailwind-scrollbar';
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,9 +11,22 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        cerise: "#E12454",
+        prussianBlue : "#223645",
+        grey: "#CBCBCF",
+        white : "#FFFFFF"
+      },
+      keyframes: {
+        'border-spin': {
+          '0%': { borderColor: 'black' },
+          '100%': { borderColor: '#E12454' },
+        },
+      },
+      animation: {
+        'border-spin-once': 'border-spin 0.3s linear forwards',
       },
     },
   },
-  plugins: [],
+  plugins: [scrollbarPlugin],
 };
 export default config;

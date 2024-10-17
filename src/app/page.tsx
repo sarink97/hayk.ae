@@ -1,3 +1,4 @@
+
 "use client";
 import PopUp from "@/components/atoms/PopUp";
 import Hero from "./hero/page";
