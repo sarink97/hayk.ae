@@ -67,7 +67,7 @@ const HomeNav = () => {
               </li>
               <li
                 className="cursor-pointer hover:text-[#E12454] text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454] h-8"
-                onClick={() => handleScroll("branches")}
+                onClick={() => handleScroll("companies")}
               >
                 Branches
               </li>
@@ -79,7 +79,7 @@ const HomeNav = () => {
               </li>
               <li
                 className="cursor-pointer hover:text-[#E12454] text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454] h-8"
-                onClick={() => handleScroll("contact")}
+                onClick={() => handleScroll("contact-us")}
               >
                 Contact Us
               </li>
