@@ -69,12 +69,18 @@ const Footer = () => {
                 placeHolder=" Enter your Name"
                 label=" *Name"
                 height="35px"
+                value={nameValue} 
+                onChange={(e) => setNameValue(e.target.value)}    
               />
               <Input
                 type="text"
                 placeHolder=" Enter your Email"
                 label=" *Email Adress"
                 height="35px"
+                value={emailValue} 
+                onChange={(e) => {
+                  setEmailValue(e.target.value);
+                }}  
               />
               <div>
                 <label> *Write the Massage</label>
@@ -89,9 +95,12 @@ const Footer = () => {
                     outline: "0px",
                   }}
                   placeholder="Write your Message ..."
+                  value={messageValue}
+                  onChange={(e) => setMessageValue(e.target.value)}
                 ></textarea>
               </div>
-              <button className="px-5 py-1 hover:bg-red-500 rounded-xl bg-[#E12454]">
+              <button className="px-5 py-1 hover:bg-red-500 rounded-xl bg-[#E12454]"
+                      onClick={(e) => sendEmail(e)}>
                 Send
               </button>
             </div>
