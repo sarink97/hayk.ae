@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const HomeNav = () => {
   const [navbarBg, setNavbarBg] = useState(false);
+
   const changeBackground = () => {
     if (window.scrollY >= 80) {
       setNavbarBg(true); // Change background color when scrolled
@@ -18,6 +20,21 @@ const HomeNav = () => {
       window.removeEventListener("scroll", changeBackground);
     };
   }, []);
+
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const yOffset = -100; // Adjust this value to control how much extra space is shown
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <div
@@ -41,16 +58,28 @@ const HomeNav = () => {
 
           <div>
             <ul className="list-none flex justify-center gap-5 text-white w-[400px]">
-              <li className="cursor-pointer hover:text-[#E12454] hover:border-b-2 hover:border-[#E12454] text-xl transition duration-300 transform h-8">
+              <li
+                className="cursor-pointer hover:text-[#E12454] hover:border-b-2 hover:border-[#E12454] text-xl transition duration-300 transform h-8"
+                onClick={() => handleScroll("home")}
+              >
                 Home
               </li>
-              <li className="cursor-pointer hover:text-[#E12454]  text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454]  h-8">
+              <li
+                className="cursor-pointer hover:text-[#E12454] text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454] h-8"
+                onClick={() => handleScroll("branches")}
+              >
                 Branches
               </li>
-              <li className="cursor-pointer hover:text-[#E12454]  text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454]  h-8">
+              <li
+                className="cursor-pointer hover:text-[#E12454] text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454] h-8"
+                onClick={() => handleScroll("services")}
+              >
                 Services
               </li>
-              <li className="cursor-pointer hover:text-[#E12454]  text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454]  h-8">
+              <li
+                className="cursor-pointer hover:text-[#E12454] text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454] h-8"
+                onClick={() => handleScroll("contact")}
+              >
                 Contact Us
               </li>
             </ul>
