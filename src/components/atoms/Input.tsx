@@ -4,6 +4,8 @@ interface Props {
   placeHolder: string;
   label: string;
   height: string;
+  value : string;
+  onChange : React.ChangeEventHandler<HTMLInputElement>
 }
 const Input = (props: Props) => {
   return (
@@ -24,6 +26,8 @@ const Input = (props: Props) => {
             outline: "0px",
             padding: "10px",
           }}
+          value={props.value}
+          onChange={props.onChange}
         />
       </div>
     </>

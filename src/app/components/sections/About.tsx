@@ -7,22 +7,20 @@ import apricodes from "./../../public/apricodes.webp";
 import { StaticImageData } from "next/image";
 
 const Branches = () => {
-  const cardArray: Array<{
-    title: string;
-    logo: StaticImageData;
-    description: string;
-  }> = [
-    {
-      title: "Marhaba Armenia",
-      logo: armenia,
-      description:
-        "Discover Armenia with tailored tourism services, offering unique experiences and guided tours to explore the country.",
+
+  const cardArray: Array<{ title: string; logo: StaticImageData; description: string; link? : string }> = [
+    { 
+        title: 'Marhaba Armenia', 
+        logo: armenia, 
+        description: 'Discover Armenia with tailored tourism services, offering unique experiences and guided tours to explore the country.',
+        link: "http://www.marhabaarmenia.com/"
     },
-    {
-      title: "Marhaba Georgia",
-      logo: georgia,
-      description:
-        "Explore Georgia with personalized tourism services, providing unforgettable travel experiences and guided tours throughout the region.",
+    { 
+        title: 'Marhaba Georgia', 
+        logo: georgia, 
+        description: 'Explore Georgia with personalized tourism services, providing unforgettable travel experiences and guided tours throughout the region.',
+        link: "http://www.marhabageorgia.com/"
+
     },
     {
       title: "Business Formation",
