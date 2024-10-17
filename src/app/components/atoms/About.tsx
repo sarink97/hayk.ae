@@ -1,27 +1,37 @@
-import React from 'react';
-import Image from 'next/image';
-import photo from './../../public/about.jpg';
+import React from "react";
+import Image from "next/image";
+import photo from "./../../public/about.jpg";
 
 const AboutUsSection = () => {
   return (
-    <div className='border-t-[2px] border-b-[2px] border-prussianBlue
-    px-[6%] py-[10px] max-w-full h-auto overflow-x-none'>
-        <h1 className='text-cerise text-[40px] text-center font-bold p-[20px] pb-[0px]'>
+    <div
+      id="about-us"
+      className="border-t-[2px] border-b-[2px] border-prussianBlue
+    px-[6%] py-[10px] max-w-full h-auto overflow-x-none"
+    >
+      <h1 className="text-cerise text-[40px] text-center font-bold p-[20px] pb-[0px]">
         About Hayk
       </h1>
-      
+
       <div className="container mx-auto flex flex-col lg:flex-row items-center py-16">
-        
         {/* Left Content */}
         <div className="lg:w-1/2 w-full lg:pr-12 text-left">
           <h1 className="text-4xl font-bold text-prussianBlue leading-tight mb-6">
-            Helping businesses <span className="text-cerise">thrive</span> through innovative solutions.
+            Helping businesses <span className="text-cerise">thrive</span>{" "}
+            through innovative solutions.
           </h1>
           <p className="text-2xl text-gray-600 mb-6">
-            Hayk is dedicated to helping businesses thrive through a range of services, from company formation to digital solutions. With a focus on innovation, integrity, and client success, Hayk offers personalized services tailored to meet the unique needs of each business.
+            Hayk is dedicated to helping businesses thrive through a range of
+            services, from company formation to digital solutions. With a focus
+            on innovation, integrity, and client success, Hayk offers
+            personalized services tailored to meet the unique needs of each
+            business.
           </p>
           <p className="text-2xl text-gray-600 mb-6">
-            Founded to support entrepreneurs and businesses, Hayk has grown steadily, reaching significant milestones over the years. The company continues to expand its services, driving growth and success for clients across various industries.
+            Founded to support entrepreneurs and businesses, Hayk has grown
+            steadily, reaching significant milestones over the years. The
+            company continues to expand its services, driving growth and success
+            for clients across various industries.
           </p>
         </div>
 
@@ -44,7 +54,7 @@ const AboutUsSection = () => {
           </div>
         </div>
       </div>
-</div>
+    </div>
   );
 };
 
