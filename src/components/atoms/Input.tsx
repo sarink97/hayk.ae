@@ -17,11 +17,12 @@ const Input = (props: Props) => {
           color="black"
           style={{
             width: "60%",
-            border: "solid 2px black",
             borderRadius: "10px",
             height: props.height,
             color: "black",
             verticalAlign: "top",
+            outline: "0px",
+            padding: "10px",
           }}
         />
       </div>

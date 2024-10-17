@@ -31,7 +31,7 @@ const HomeNav = () => {
             : "bg-slate-400 bg-opacity-30 border-white"
         } border-b-2 transition-all duration-300`}
       >
-        <div className="flex justify-between items-center w-[88%]">
+        <div className="flex justify-between items-center w-full px-[6%]">
           <a
             href="/"
             className="cursor-pointer flex items-center justify-center"
