@@ -5,7 +5,7 @@ import photo from './../../public/about.jpg';
 const AboutUsSection = () => {
   return (
     <div className='border-t-[2px] border-b-[2px] border-prussianBlue
-    p-[10px] max-w-full h-auto overflow-x-none'>
+    px-[6%] py-[10px] max-w-full h-auto overflow-x-none'>
         <h1 className='text-cerise text-[40px] text-center font-bold p-[20px] pb-[0px]'>
         About Hayk
       </h1>
