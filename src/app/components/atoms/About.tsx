@@ -27,7 +27,7 @@ const AboutUsSection = () => {
             travelers, and businesses.
           </p>
           <p className="text-2xl text-gray-600 mb-6">
-            Whether you're looking to establish a company in the UAE, 
+            Whether you are looking to establish a company in the UAE, 
             explore the beauty of Dubai, Armenia, and Georgia through tailored travel experiences, 
             or implement innovative digital solutions, 
             Hayk offers expert guidance and support every step of the way. 

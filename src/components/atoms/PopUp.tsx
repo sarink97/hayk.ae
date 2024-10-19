@@ -31,7 +31,7 @@ function PopUp() {
         Open Popup
       </Button>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Website's Title</DialogTitle>
+        <DialogTitle>Website Title</DialogTitle>
         <DialogContent>
           {/* You can put any content here */}
           <p>Explaination for website</p>
@@ -52,3 +52,4 @@ function PopUp() {
 }
 
 export default PopUp;
+

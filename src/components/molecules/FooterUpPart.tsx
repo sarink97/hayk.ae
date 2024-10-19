@@ -20,6 +20,7 @@ const FooterUpPart = () => {
             Your gateway to UAE business setup, unforgettable
             Dubai-Armenia-Georgia travel experiences, and cutting-edge digital
             solutions.
+
           </p>
         </div>
       </div>
