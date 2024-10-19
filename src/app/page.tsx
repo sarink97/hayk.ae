@@ -1,4 +1,3 @@
-
 "use client";
 import PopUp from "@/components/atoms/PopUp";
 import Hero from "./hero/page";
@@ -15,9 +14,9 @@ export default function Home() {
       <div>
         <AboutUsSection />
         <Services />
-        <Branches />
         <ApricodeSection />
-    </div>
+        <Branches />
+      </div>
     </div>
   );
 }

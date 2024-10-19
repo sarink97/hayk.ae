@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import FooterCol from "../atoms/FooterCol";
 
@@ -8,26 +9,26 @@ const FooterLinks = () => {
       <div className="absolute top-0 right-0 w-[100%] h-full bg-[#414042] skew-y-2 transform origin-bottom-right border-t-2 border-[#E12454]"></div>
 
       {/* Content inside the footer */}
-      <div className="relative mx-auto px-6 flex gap-5 justify-between w-[800px]">
+      <div className="relative mx-auto px-6 flex gap-5 justify-between w-[400px]">
+        <FooterCol
+          title="Company"
+          links={[
+            { title: "Home", href: "#home" },
+            { title: "About us", href: "#about-us" },
+            { title: "Services", href: "#services" },
+            { title: "Features", href: "#Features" },
+          ]}
+        />
         <FooterCol
           title="Our Services"
           links={[
-            { title: "Home", href: "/" },
-            { title: "About us", href: "/about_us" },
-            { title: "Services", href: "/services" },
-            { title: "Features", href: "/features" },
+            { title: "Marhaba Armenia", href: "https://marhabaarmenia.com/" },
+            { title: "Marhaba Georgia", href: "https://marhabageorgia.com/" },
+            { title: "Business Formation", href: "#home" },
+            { title: "Apricodes", href: "#branches" },
           ]}
         />
-        <FooterCol
-          title="Quick Link"
-          links={[
-            { title: "Knowledge Base", href: "" },
-            { title: "Hire An Expert", href: "/about_us" },
-            { title: "FAQ", href: "/about_us" },
-            { title: "Contect", href: "/about_us" },
-          ]}
-        />
-        <FooterCol
+        {/* <FooterCol
           title="Resourcess"
           links={[
             { title: "Knowledge Base", href: "" },
@@ -44,7 +45,7 @@ const FooterLinks = () => {
             { title: "FAQ", href: "/about_us" },
             { title: "Contect", href: "/about_us" },
           ]}
-        />
+        /> */}
       </div>
     </div>
   );
