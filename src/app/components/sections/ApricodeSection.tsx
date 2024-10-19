@@ -18,16 +18,10 @@ const ApricodeSection = () => {
     description: string;
   }> = [
     {
-      title: "Graphic Design",
-      icon: <PenTool />,
+      title: "Web Applications",
+      icon: <Globe />,
       description:
-        "We specialize in creating unique visual identities, print materials, and promotional videos for businesses.",
-    },
-    {
-      title: "Electronics Engineering",
-      icon: <Cpu />,
-      description:
-        "We provide energy solutions, system designs, and protection systems for homes and industrial setups.",
+        "We design secure websites and web systems with a focus on user experience and functionality.",
     },
     {
       title: "Mobile Applications",
@@ -36,16 +30,16 @@ const ApricodeSection = () => {
         "We build mobile apps for Android and iOS, providing tailored solutions for diverse business needs.",
     },
     {
-      title: "Web Applications",
-      icon: <Globe />,
-      description:
-        "We design secure websites and web systems with a focus on user experience and functionality.",
-    },
-    {
       title: "Desktop Applications",
       icon: <Monitor />,
       description:
         "We create desktop software for Windows systems, offering customized and secure platforms.",
+    },
+    {
+      title: "Graphic Design",
+      icon: <PenTool />,
+      description:
+        "We specialize in creating unique visual identities, print materials, and promotional videos for businesses.",
     },
   ];
 
