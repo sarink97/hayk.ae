@@ -21,22 +21,24 @@ const AboutUsSection = () => {
             through innovative solutions.
           </h1>
           <p className="text-2xl text-gray-600 mb-6">
-            At Hayk, we are your gateway to success in three distinct areas: business setup in the UAE, 
-            unforgettable travel experiences across Dubai, Armenia, and Georgia, 
-            and cutting-edge digital solutions. We are committed to delivering personalized services that cater to the unique needs of entrepreneurs,
-            travelers, and businesses.
+            At Hayk, we are your gateway to success in three distinct areas:
+            business setup in the UAE, unforgettable travel experiences across
+            Dubai, Armenia, and Georgia, and cutting-edge digital solutions. We
+            are committed to delivering personalized services that cater to the
+            unique needs of entrepreneurs, travelers, and businesses.
           </p>
           <p className="text-2xl text-gray-600 mb-6">
-            Whether you are looking to establish a company in the UAE, 
-            explore the beauty of Dubai, Armenia, and Georgia through tailored travel experiences, 
-            or implement innovative digital solutions, 
-            Hayk offers expert guidance and support every step of the way. 
-            Our dedication to client success, integrity, and innovation drives us to continuously expand and refine our services to meet your evolving needs.
+            Whether you are looking to establish a company in the UAE, explore
+            the beauty of Dubai, Armenia, and Georgia through tailored travel
+            experiences, or implement innovative digital solutions, Hayk offers
+            expert guidance and support every step of the way. Our dedication to
+            client success, integrity, and innovation drives us to continuously
+            expand and refine our services to meet your evolving needs.
           </p>
         </div>
 
         {/* Right Image with Circlines */}
-        <div className="lg:w-1/2 w-full mt-12 lg:mt-0 relative flex justify-center items-center">
+        <div className="md:w-1/2 w-3/4 mt-12 lg:mt-0 relative flex justify-center items-center">
           {/* Circlines - Shapes */}
           <div className="absolute w-72 h-72 bg-cerise rounded-full -left-10 -top-10"></div>
           <div className="absolute w-56 h-56 bg-prussianBlue rounded-full -bottom-16 -right-16"></div>
