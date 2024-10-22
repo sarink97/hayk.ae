@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import photo from "./../../public/apricodes_about.webp";
+import photo from "./../../public/apricodes-about.webp";
 
 const AboutApricodes = () => {
   return (

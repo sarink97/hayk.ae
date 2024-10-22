@@ -24,7 +24,7 @@ const CustomCard = (props: cardProps) => {
               hover:translate-y-[-30px] hover:cursor-pointer 
               hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] pt-[20px]
               flex-shrink-0 overflow-hidden'>
-        <div className='flex group flex flex-col items-center '>
+        <div className='flex group flex-col items-center '>
           {props.logo ? <CustomImage logo={props.logo} /> : props.icon && <CustomCircle iconName={props.icon} />}
           <CustomBox title={props.title} description={props.description} link={props.link} />
         </div>
