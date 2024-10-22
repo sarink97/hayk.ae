@@ -85,7 +85,7 @@ const HomeNav = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 h-20 flex justify-center ${
+        className={`fixed top-0 left-0 right-0 z-50 h-20 w-full flex justify-center ${
           navbarBg
             ? "bg-[#414042] border-[#E12454]"
             : "bg-slate-400 bg-opacity-30 border-white"

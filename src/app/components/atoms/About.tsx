@@ -38,7 +38,7 @@ const AboutUsSection = () => {
         </div>
 
         {/* Right Image with Circlines */}
-        <div className="md:w-1/2 w-3/4 mt-12 lg:mt-0 relative flex justify-center items-center">
+        <div className="md:w-1/2 w-3/4 mt-12 lg:mt-0 relative flex justify-center items-center mb-4 md:mb-0">
           {/* Circlines - Shapes */}
           <div className="absolute w-72 h-72 bg-cerise rounded-full -left-10 -top-10"></div>
           <div className="absolute w-56 h-56 bg-prussianBlue rounded-full -bottom-16 -right-16"></div>
