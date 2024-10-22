@@ -19,16 +19,16 @@ const CustomCard = (props: cardProps) => {
   return (
     <>
       {props.link ? (
-        <Link href={props.link}  passHref>
-          <div className='relative z-10 group flex flex-col items-center 
-                transition-transform duration-300 hover:z-[1000] 
-                hover:translate-y-[-30px] hover:cursor-pointer 
-                hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] pt-[20px]
-                flex-shrink-0 overflow-hidden'>
-            {props.logo ? <CustomImage logo={props.logo} /> : props.icon && <CustomCircle iconName={props.icon} />}
-            <CustomBox title={props.title} description={props.description} link={props.link}/>
-          </div>
-        </Link>
+        <Link href={props.link} passHref className='relative z-10 
+              transition-transform duration-300 hover:z-[1000] 
+              hover:translate-y-[-30px] hover:cursor-pointer 
+              hover:shadow-[0_10px_15px_-3px_rgba(0,0,0,0.1)] pt-[20px]
+              flex-shrink-0 overflow-hidden'>
+        <div className='flex group flex flex-col items-center '>
+          {props.logo ? <CustomImage logo={props.logo} /> : props.icon && <CustomCircle iconName={props.icon} />}
+          <CustomBox title={props.title} description={props.description} link={props.link} />
+        </div>
+      </Link>
       ) : (
         <div className='relative z-10 group flex flex-col items-center 
               transition-transform duration-300 hover:z-[1000] 
