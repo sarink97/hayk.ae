@@ -74,7 +74,7 @@ const HomeNav = () => {
 
   const navItems = [
     { id: "home", label: "Home" },
-    { id: "branches", label: "Branches" },
+    { id: "companies", label: "Branches" },
     { id: "services", label: "Services" },
     { id: "contact-us", label: "Contact Us" },
   ];
