@@ -48,7 +48,7 @@ const Footer = () => {
         id="contact-us"
       >
         <div className="ml-auto  w-full h-full bg-amber-800 bg-opacity-30 text-white md:flex-row flex-col flex justify-end items-center ">
-          <p className="mx-auto text-[70px] shadow-lg md:mb-[160px]">
+          <p className="mx-auto text-[40px] md:text-[70px] shadow-lg md:mb-[160px] md:pt-0 pt-4">
             Contact Us
           </p>
           <div className="md:w-[55%] w-3/4 justify-end flex  md:justify-center  gap-7 bg-gray-500 bg-opacity-35 pr-[6%] pl-[1%] py-4 rounded-xl  md:rounded-l-xl border-2 md:border-r-0 border-gray-600 shadow-2xl">
