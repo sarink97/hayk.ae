@@ -55,7 +55,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-2 w-[50%] justify-between m-auto ">
               <li>
                 <span className="text-xl block mb-2">Phone Number : </span>
-                <a className="  duration-300 text-xl bg-[#E12454] bg-opacity-45 rounded-lg p-2 block w-fit">
+                <a className="  duration-300 md:text-xl text-sm bg-[#E12454] bg-opacity-45 rounded-lg p-2 block w-fit text-nowrap">
                   +971 (4) 597-3335
                 </a>
               </li>
@@ -66,7 +66,7 @@ const Footer = () => {
                 </span>
                 <Link
                   href="mailto:success@hayk.ae?subject=Subject%20Here&body=Body%20Content%20Here "
-                  className=" bg-[#E12454] hover:bg-red-500 rounded-lg p-2 duration-300 text-xl "
+                  className=" bg-[#E12454] hover:bg-red-500 md:text-xl text-sm rounded-lg p-2 duration-300 "
                 >
                   Send Email
                 </Link>

@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className="md:text-[50px] text-[25px] font-bold">
               Expert services in UAE business setup
             </h1>
-            <p className="md:text-[30px] text-[20px] text-wrap w-full ">
+            <p className="md:text-[30px] text-[20px] text-wrap md:w-full text-slate-300  pr-[6%] ">
               We provide tourism management, and web development to help
               businesses thrive. Our tailored solutions ensure growth and
               innovation for companies across various industries.
