@@ -1,6 +1,6 @@
-import { Building2, Cpu, TicketIcon, TicketsPlane } from "lucide-react";
+import { Building2, Cpu, TicketsPlane } from "lucide-react";
+import { ReactElement } from "react";
 import Section from "../organisms/Section";
-import React, { ReactElement } from "react";
 
 const Services = () => {
   const cardArray: Array<{

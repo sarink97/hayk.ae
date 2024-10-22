@@ -1,18 +1,12 @@
 "use client";
 
-import { PenTool, Cpu, Smartphone, Globe, Monitor } from "lucide-react";
-import React, { ReactElement, useRef } from "react";
-import CustomSeparator from "./CustomSeparator";
-import CustomCard from "../molecules/CustomCard";
-import { chown } from "fs";
+import { ReactElement, useRef } from "react";
 
 const HorizontalScroller = ({
   children,
-  width,
   scrollerStyle,
   isScrolling
 }: {
-  width: string;
   children: ReactElement[];
   scrollerStyle?: string;
   isScrolling? : boolean

@@ -24,7 +24,7 @@ const Section = (props: SectionProps) => {
       <h1 className='text-cerise text-[40px] text-center font-bold p-[20px] pb-[0px]'>{props.title}</h1>
       <div className="relative max-w-full h-auto overflow-x-auto scrollbar-thin scrollbar-thumb-cerise scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full m-auto scrollbar-w-[200px]">
         <div className="relative w-full h-auto overflow-x-auto scrollbar-thin scrollbar-thumb-cerise scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full m-auto scrollbar-w-[200px]">
-          <HorizontalScroller width={''} isScrolling={cardArray.length >= 4}>
+          <HorizontalScroller isScrolling={cardArray.length >= 4}>
             {cardArray.map((card, index) => (
               <React.Fragment key={index}>
                 <CustomCard 

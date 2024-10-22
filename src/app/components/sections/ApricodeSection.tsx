@@ -1,15 +1,12 @@
 import {
-  Building2,
   Cpu,
   Globe,
   Monitor,
   PenTool,
-  Smartphone,
-  TicketIcon,
-  TicketsPlane,
+  Smartphone
 } from "lucide-react";
+import { ReactElement } from "react";
 import Section from "../organisms/Section";
-import React, { ReactElement } from "react";
 
 const ApricodeSection = () => {
   const cardArray: Array<{
