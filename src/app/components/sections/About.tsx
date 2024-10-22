@@ -38,6 +38,7 @@ const Branches = () => {
       logo: apricodes,
       description:
         "We provide cutting-edge digital solutions, including web development, mobile app creation, graphic design, and software engineering.",
+      link: "/apricodes"
     },
   ];
 
