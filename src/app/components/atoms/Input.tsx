@@ -5,7 +5,7 @@ interface Props {
   label: string;
   height: string;
   value: string;
-  onChange : React.ChangeEventHandler<HTMLInputElement>
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
 }
 const Input = (props: Props) => {
   return (
@@ -13,12 +13,13 @@ const Input = (props: Props) => {
       <div className="flex flex-col w-full">
         <label>{props.label}</label>
         <input
+          className="text-sm md:text-md"
           type={props.type}
           placeholder={props.placeHolder}
           aria-label="hhhh"
           color="black"
           style={{
-            width: "60%",
+            width: "100%",
             borderRadius: "10px",
             height: props.height,
             color: "black",
