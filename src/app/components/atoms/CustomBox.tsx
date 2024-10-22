@@ -22,6 +22,7 @@ const CustomBox = (props: boxProps) => {
           <span className='ml-2 font-semibold text-cerise text-[18px] text-right'>Click Here!</span>
         )}
       </div>
+
       
       <div className='relative w-[80px] border-solid border-[2px] border-t-cerise'></div>
     </div>
