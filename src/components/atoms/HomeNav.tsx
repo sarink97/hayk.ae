@@ -1,6 +1,6 @@
-"use client";
+"use client"; // To ensure it's a client-side component
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const HomeNav = () => {
   const [navbarBg, setNavbarBg] = useState(false);
@@ -14,26 +14,12 @@ const HomeNav = () => {
   };
 
   useEffect(() => {
-    changeBackground();
+    // Add scroll event listener for background change
     window.addEventListener("scroll", changeBackground);
     return () => {
       window.removeEventListener("scroll", changeBackground);
     };
   }, []);
-
-  const handleScroll = (id: string) => {
-    const section = document.getElementById(id);
-    if (section) {
-      const yOffset = -100; // Adjust this value to control how much extra space is shown
-      const y =
-        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-      window.scrollTo({
-        top: y,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <>
@@ -60,32 +46,35 @@ const HomeNav = () => {
             <ul className="list-none flex justify-center gap-5 text-white w-[400px]">
               <li
                 className="cursor-pointer hover:text-[#E12454] hover:border-b-2 hover:border-[#E12454] text-xl transition duration-300 transform h-8"
-                onClick={() => handleScroll("home")}
               >
-                Home
+                <a href="/#home">Home</a>
               </li>
               <li
                 className="cursor-pointer hover:text-[#E12454] text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454] h-8"
-                onClick={() => handleScroll("companies")}
               >
-                Branches
+                <a href="/#companies">Branches</a>
               </li>
               <li
                 className="cursor-pointer hover:text-[#E12454] text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454] h-8"
-                onClick={() => handleScroll("services")}
               >
-                Services
+                <a href="/#services">Services</a>
               </li>
               <li
                 className="cursor-pointer hover:text-[#E12454] text-xl transition duration-300 transform hover:border-b-2 hover:border-[#E12454] h-8"
-                onClick={() => handleScroll("contact-us")}
               >
-                Contact Us
+                <a href="/#contact-us">Contact Us</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
+
+      {/* Smooth scrolling style */}
+      <style jsx>{`
+        html {
+          scroll-behavior: smooth;
+        }
+      `}</style>
     </>
   );
 };
