@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import HomeNav from "@/components/atoms/HomeNav";
-import Footer from "@/components/organism/Footer";
+import HomeNav from "./components/atoms/HomeNav";
+import Footer from "./components/organisms/Footer";
 
 export const metadata: Metadata = {
   title: "Hayk",
