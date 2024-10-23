@@ -17,9 +17,9 @@ const FooterUpPart = () => {
 
           {/* Text Content */}
           <p className="w-1/2 text-center">
-            Your gateway to UAE business setup, unforgettable
-            Dubai-Armenia-Georgia travel experiences, and cutting-edge digital
-            solutions.
+            Hayk—A versatile company dedicated to excellence, delivering
+            innovative solutions to meet your diverse needs across multiple
+            sectors.
           </p>
         </div>
       </div>

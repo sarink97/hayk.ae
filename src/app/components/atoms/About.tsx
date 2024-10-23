@@ -17,24 +17,32 @@ const AboutUsSection = () => {
         {/* Left Content */}
         <div className="lg:w-1/2 w-full lg:pr-12 text-left">
           <h1 className="text-4xl font-bold text-prussianBlue leading-tight mb-6">
-            Helping businesses <span className="text-cerise">thrive</span>{" "}
-            through innovative solutions.
+            Helping you thrive through our innovative and diverse solutions.
           </h1>
           <p className="text-2xl text-gray-600 mb-6">
-            At Hayk, we are your gateway to success in three distinct areas:
-            business setup in the UAE, unforgettable travel experiences across
-            Dubai, Armenia, and Georgia, and cutting-edge digital solutions. We
-            are committed to delivering personalized services that cater to the
-            unique needs of entrepreneurs, travelers, and businesses.
+            Hayk is a versatile company committed to excellence across multiple
+            sectors. We bring together distinct services under one brand to meet
+            your varied needs:
           </p>
           <p className="text-2xl text-gray-600 mb-6">
-            Whether you are looking to establish a company in the UAE, explore
-            the beauty of Dubai, Armenia, and Georgia through tailored travel
-            experiences, or implement innovative digital solutions, Hayk offers
-            expert guidance and support every step of the way. Our dedication to
-            client success, integrity, and innovation drives us to continuously
-            expand and refine our services to meet your evolving needs.
+            • Digital Solutions: Transforming ideas into reality with our
+            expertise in web development, mobile app creation, and graphic
+            design.
           </p>
+          <p className="text-2xl text-gray-600 mb-6">
+            • Tourism Services: Crafting unforgettable experiences with our
+            exclusive tours from Dubai to Armenia or Georgia.
+          </p>
+          <p className="text-2xl text-gray-600 mb-6">
+            • Company Formation in the UAE: Guiding you through a seamless
+            business setup process with tailored solutions for establishing your
+            company.
+          </p>
+          <h2 className="text-xl text-gray-600 mb-6">
+            At Hayk, our goal is to provide exceptional service in every
+            endeavor, ensuring your objectives are met with professionalism and
+            dedication.
+          </h2>
         </div>
 
         {/* Right Image with Circlines */}
