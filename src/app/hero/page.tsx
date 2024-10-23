@@ -9,12 +9,12 @@ const Hero = () => {
         <div className="bg-slate-800 w-full h-full bg-opacity-45 flex flex-col justify-between items-center">
           <div className="flex-col text-white text-[30px] w-fit lg:w-[900px] flex items-start gap-5 text-left pl-3 h-[240px] absolute top-[20%] left-[6%]  ">
             <h1 className="md:text-[50px] text-[25px] font-bold">
-              Expert services in UAE business setup
+              BRIDGING YOUR NEEDS WITH OUR VERSATILE EXPERTISE.
             </h1>
             <p className="md:text-[30px] text-[20px] text-wrap md:w-full text-slate-300  pr-[6%] ">
-              We provide tourism management, and web development to help
-              businesses thrive. Our tailored solutions ensure growth and
-              innovation for companies across various industries.
+              Forward-thinking solutions designed to meet your unique needs,
+              leveraging expertise across diverse sectors to foster innovation
+              and growth.
             </p>
           </div>
           <button

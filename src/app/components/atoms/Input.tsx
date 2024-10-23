@@ -11,7 +11,7 @@ const Input = (props: Props) => {
   return (
     <>
       <div className="flex flex-col w-full">
-        <label>{props.label}</label>
+        <label className="md:text-md text-xs">{props.label}</label>
         <input
           className="text-sm md:text-md"
           type={props.type}
@@ -25,7 +25,7 @@ const Input = (props: Props) => {
             color: "black",
             verticalAlign: "top",
             outline: "0px",
-            padding: "10px",
+            padding: "8px",
           }}
           value={props.value}
           onChange={props.onChange}
